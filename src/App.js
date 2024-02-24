@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { CustomHeader } from "./components/Header";
+import { RoutesApp } from "./routes/routes";
+import '../src/styles/globals.scss';
+import{register} from 'swiper/element/bundle';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+register();
 
 function App() {
+  AOS.init();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RoutesApp/>
     </div>
   );
 }

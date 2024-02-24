@@ -1,0 +1,73 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Krona+One&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  width: 100%;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  /* Para centralizar verticalmente */
+  max-width: 1450px;
+  height: 100vh;
+  /* Ocupa a altura total da viewport */
+  margin: 0 auto;
+}
+main .main-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1450px;
+}
+main .diferenciais h2,
+main .servicos h2 {
+  margin-bottom: 10px;
+  /* Adicione uma margem abaixo do título H2 para dar algum espaçamento */
+}
+main .diferenciais-itens,
+main .cards-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* Adicione esta linha para garantir que os itens quebrem para a próxima linha se não couberem */
+}
+main .diferenciais-itens > div,
+main .cards-services > div {
+  margin: 10px;
+  /* Adicione margem entre os itens dos diferenciais ou serviços */
+  text-align: left;
+  /* Ajuste para o texto ficar alinhado à esquerda */
+}
+main .diferenciais-itens li,
+main .cards-services li {
+  list-style-type: none;
+  /* Remova os marcadores de lista */
+}
+
+/* Adapte isso de acordo com a estrutura do seu HTML */
+main > * {
+  margin: 20px;
+  /* Adicione margens entre os elementos se desejar */
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}/*# sourceMappingURL=globals.css.map */

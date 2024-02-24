@@ -1,0 +1,94 @@
+@charset "UTF-8";
+.swiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.item-slide {
+  width: 1300px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-slide img {
+  width: 1400px;
+  height: 450px;
+}
+
+/* Adicione ao seu arquivo de estilo ou style.scss */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  /* Cor do ícone */
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  .item-slide {
+    width: 768px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .item-slide img {
+    width: 400px;
+    height: 250px;
+  }
+  /* Adicione ao seu arquivo de estilo ou style.scss */
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    /* Cor do ícone */
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .swiper-button-prev {
+    left: 10px;
+  }
+  .swiper-button-next {
+    right: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

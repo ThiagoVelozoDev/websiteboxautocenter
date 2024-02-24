@@ -1,0 +1,99 @@
+@charset "UTF-8";
+header {
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  flex-direction: row;
+}
+header img {
+  height: 80px;
+  width: 90px;
+}
+header p {
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+header .menu-items {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  font-family: sans-serif;
+  font-size: 14px;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+header .menu-item {
+  color: white;
+}
+header .i-instagram,
+header .i-facebook,
+header .i-whatsapp {
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+}
+header .nav {
+  display: flex;
+  justify-content: end;
+  margin-left: auto;
+  align-items: center;
+}
+header .nav .menu-nav {
+  margin-right: 30px;
+}
+header .folder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+header .folder .swiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+/* Supondo que você esteja usando CSS puro */
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    background-color: #000000; /* Certifique-se de que $black-normal está definido */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  header img {
+    height: 80px;
+    width: 90px;
+  }
+  header .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  header .nav .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  header .nav .menu-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .nav .menu-nav .menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,127 @@
+@import '../../styles/colors';
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: $black-normal ;
+    flex-direction: row;
+
+    img {
+        height: 80px;
+        width: 90px;
+    }
+
+    p {
+        color: $white;
+        font-family: sans-serif;
+        font-size: 14px;
+
+    }
+
+    .menu-items {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        font-family: sans-serif;
+        font-size: 14px;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .menu-item {
+        color: $white;
+
+
+    }
+
+
+
+    .i-instagram,
+    .i-facebook,
+    .i-whatsapp {
+        height: 40px;
+        width: 40px;
+        margin-left: 10px;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: end;
+        margin-left: auto;
+        align-items: center;
+
+        .menu-nav {
+            margin-right: 30px;
+        }
+    }
+
+    .folder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; // Adiciona esta propriedade
+
+        .swiper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1; // Adiciona esta propriedade
+        }
+    }
+
+}
+
+/* Supondo que você esteja usando CSS puro */
+
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        background-color: $black-normal; /* Certifique-se de que $black-normal está definido */
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            height: 100px;
+            width: 120px;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            margin: 10px auto;
+
+            .header-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+                
+                
+            }
+
+            .menu-nav {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .menu-items {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 20px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

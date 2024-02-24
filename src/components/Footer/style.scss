@@ -1,0 +1,92 @@
+@import '../../styles/colors';
+
+.footer-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* Ensures padding doesn't affect the total width */
+    
+    @media only screen and (min-width: 768px) {
+        flex-direction: row;
+        width: 100%;
+        max-width: 1024px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .footer-principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            color: #fff;
+            font-family: 'Lato', sans-serif;
+            letter-spacing: 1.5px;
+        }
+
+        img {
+            width: 250px;
+            height: 200px;
+        }
+
+        .i-instagram,
+        .i-facebook,
+        .i-whatsapp {
+            height: 40px;
+            width: 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .menu-item {
+        margin-top: 20px;
+
+        @media only screen and (min-width: 768px) {
+            margin-top: 40px;
+        }
+    }
+
+    .central-relacionamento {
+        margin-top: 30px;
+        h3 {
+            color: #fff;
+        }
+
+        p {
+            color: #fff;
+            margin-top: 20px;
+        }
+    }
+}
+
+.copy {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(179, 3, 3);
+
+    p {
+        color: #fff;
+        margin: 10px;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            margin: 20px;
+        }
+    }
+}
