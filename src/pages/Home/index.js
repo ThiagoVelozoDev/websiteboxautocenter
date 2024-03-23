@@ -13,6 +13,7 @@ import suspencao from '../../assets/img/suspensao.PNG';
 import cambio from '../../assets/img/cambio.jpg';
 import freio from '../../assets/img/freio.jpg';
 import eletrica from '../../assets/img/eletrica.PNG';
+import whatsapp from '../../assets/img/whatssapp.svg';
 
 
 
@@ -26,7 +27,7 @@ export function Home() {
 
             <main>
                 <div className='main-principal'>
-                    <div  id="diferenciais" className="diferenciais">
+                    <div id="diferenciais" className="diferenciais">
                         <h2 className='titulo-section'>Diferenciais</h2>
                         <div className="diferenciais-itens">
                             <div>
@@ -127,6 +128,19 @@ export function Home() {
                             </iframe>
                         </div>
                     </div>
+                    <div>
+                        {/* Button Whatsapp */}
+                        <a
+                            href='https://api.whatsapp.com/send?phone=5592994949292'
+                            className="btn-whatsapp"
+                            target="_blank"
+                            data-aos="zoom-in-up" data-aos-delay="400"
+                        >
+                            <img src={whatsapp} />
+                            <span className='tooltip-text'>Faça seu orçamento!</span>
+                        </a>
+                    </div>
+
                 </div>
                 <Footer />
             </main>
